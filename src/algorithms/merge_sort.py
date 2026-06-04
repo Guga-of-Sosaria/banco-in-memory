@@ -21,7 +21,7 @@ def MERGE(esquerda, direita):
 
     #Organiza as duas lista
     while i < len(esquerda) and j < len(direita):
-        if esquerda[i] < direita[j]:
+        if esquerda[i]["key"] < direita[j]["key"]:
             resultado.append(esquerda[i])
             i += 1
         else:
