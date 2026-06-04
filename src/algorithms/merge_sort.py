@@ -19,9 +19,10 @@ def MERGE(esquerda, direita):
     #Índices denotando esquerda e direita, respectivamente
     i = j = 0
 
-    #Organiza as duas lista
+    #Organiza as duas listas
     while i < len(esquerda) and j < len(direita):
-        if esquerda[i] < direita[j]:
+        #Compara as chaves de cada nó
+        if esquerda[i]["key"]< direita[j]["key"]:
             resultado.append(esquerda[i])
             i += 1
         else:
